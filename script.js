@@ -1,5 +1,5 @@
 /* ============================================================
-   A25 Organics — JavaScript feature (Task 4)
+   M25 Organics — JavaScript feature (Task 4)
    Feature: Order basket estimator with form validation,
             live DOM updates, and Local Storage persistence.
    ============================================================ */
@@ -8,8 +8,8 @@
   "use strict";
 
   /* ---------- Storage keys ---------- */
-  const BASKET_KEY = "a25_basket_v1";
-  const CUSTOMER_KEY = "a25_customer_v1";
+  const BASKET_KEY = "m25_basket_v1";
+  const CUSTOMER_KEY = "m25_customer_v1";
 
   /* ---------- State ---------- */
   let basket = loadBasket();
