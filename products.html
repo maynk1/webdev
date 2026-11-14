@@ -8,9 +8,10 @@
   <meta name="description" content="Browse M25 Organics' full catalogue of certified organic vegetables, fruits, grains and dairy with published prices. Build an order, save it to your browser, and place it in two minutes." />
   <meta name="keywords" content="organic vegetables price list, order organic produce online, M25 Organics catalogue, farm fresh order form" />
   <meta name="author" content="M25 Organics" />
+  <meta name="theme-color" content="#111111" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -19,10 +20,9 @@
   <header class="site-header">
     <div class="container header-inner">
       <a href="index.html" class="brand" aria-label="M25 Organics home">
-        <svg class="brand-mark" width="40" height="40" viewBox="0 0 48 48" role="img" aria-label="M25 Organics leaf logo">
-          <circle cx="24" cy="24" r="23" fill="#FEFAE0" stroke="#2D6A4F" stroke-width="2"/>
-          <path d="M14 30 C14 18, 26 12, 34 14 C32 26, 24 34, 14 30 Z" fill="#52B788"/>
-          <path d="M16 30 C22 24, 28 20, 33 16" stroke="#2D6A4F" stroke-width="1.5" fill="none"/>
+        <svg class="brand-mark" width="40" height="40" viewBox="0 0 48 48" role="img" aria-label="M25 Organics monogram logo">
+          <circle cx="24" cy="24" r="22.5" fill="#111111"/>
+          <text x="24" y="30" text-anchor="middle" font-size="14" font-weight="600" font-style="italic" fill="#FAFAF8">M25</text>
         </svg>
         <span class="brand-name">M25 <span class="brand-accent">Organics</span></span>
       </a>
@@ -46,7 +46,7 @@
     <section class="band band-cream" aria-labelledby="catalogue-title">
       <div class="container">
         <header class="section-head">
-          <p class="eyebrow">Catalogue &amp; prices</p>
+          <p class="eyebrow"><span class="eyebrow-no">01</span> Catalogue &amp; prices</p>
           <h1 id="catalogue-title">Certified organic produce &mdash; with the price written down.</h1>
           <p>Prices are per kilo unless stated. Tap <strong>Add</strong> to put an item in your order basket;
              the running total updates automatically and is saved in your browser so you can come back later.</p>
@@ -160,6 +160,7 @@
 
         <!-- Order form with 5+ input types (Task 3) -->
         <div class="order-form-wrap">
+          <p class="eyebrow"><span class="eyebrow-no">02</span> Build your order</p>
           <h2 id="order-title">Place your order</h2>
           <p class="form-intro">Fill in your details and confirm. Your information stays in your browser until you submit.</p>
 
@@ -249,15 +250,17 @@
     </section>
 
     <!-- ===== AI disclosure banner (Task 6 ethics) ===== -->
-  
+ 
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <p class="footer-name">M25 Organics</p>
-        <p class="footer-tag">Certified organic produce, Faridabad.</p>
-      </div>
+    <div class="container">
+      <hr class="footer-rule" />
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <p class="footer-name">M25 <em>Organics</em></p>
+          <p class="footer-tag">Certified organic produce, Faridabad.</p>
+        </div>
       <nav class="footer-nav" aria-label="Footer">
         <h4>Explore</h4>
         <ul>
@@ -275,6 +278,7 @@
         <h4>Privacy</h4>
         <p>Order details are stored only in your browser (Local Storage) and emailed to you. We never sell customer data.</p>
         <p class="copy">&copy; 2025 M25 Organics.</p>
+      </div>
       </div>
     </div>
   </footer>
