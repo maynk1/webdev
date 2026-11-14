@@ -373,6 +373,39 @@
     });
   }
 
+  /* ============================================================
+     7.  Presentation polish (progressive enhancement)
+     a) sticky-header hairline once the page is scrolled
+     b) scroll-reveal for [data-reveal] blocks (respects
+        prefers-reduced-motion via CSS)
+     ============================================================ */
+  const $header = document.querySelector(".site-header");
+  if ($header) {
+    const onScroll = function () {
+      $header.classList.toggle("scrolled", window.scrollY > 8);
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+  }
+
+  if ("IntersectionObserver" in window) {
+    const revealables = document.querySelectorAll("[data-reveal]");
+    const io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+    revealables.forEach(function (el) { io.observe(el); });
+  } else {
+    // very old browser: just show everything
+    document.querySelectorAll("[data-reveal]").forEach(function (el) {
+      el.classList.add("is-visible");
+    });
+  }
+
   /* ---------- tiny escape helpers ---------- */
   function escapeHtml(s) {
     return String(s).replace(/[&<>"']/g, function (c) {
