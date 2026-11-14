@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Task 6: SEO meta tags -->
+  <title>Catalogue &amp; Order | A25 Organics</title>
+  <meta name="description" content="Browse A25 Organics' full catalogue of certified organic vegetables, fruits, grains and dairy with published prices. Build an order, save it to your browser, and place it in two minutes." />
+  <meta name="keywords" content="organic vegetables price list, order organic produce online, A25 Organics catalogue, farm fresh order form" />
+  <meta name="author" content="A25 Organics" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="A25 Organics home">
+        <svg class="brand-mark" width="40" height="40" viewBox="0 0 48 48" role="img" aria-label="A25 Organics leaf logo">
+          <circle cx="24" cy="24" r="23" fill="#FEFAE0" stroke="#2D6A4F" stroke-width="2"/>
+          <path d="M14 30 C14 18, 26 12, 34 14 C32 26, 24 34, 14 30 Z" fill="#52B788"/>
+          <path d="M16 30 C22 24, 28 20, 33 16" stroke="#2D6A4F" stroke-width="1.5" fill="none"/>
+        </svg>
+        <span class="brand-name">A25 <span class="brand-accent">Organics</span></span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html" aria-current="page">Catalogue &amp; Order</a></li>
+          <li><a href="index.html#about">About the Farm</a></li>
+          <li><a href="index.html#trust">Why Trust Us</a></li>
+          <li><a href="#order" class="nav-cta">Order Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== Page intro ===== -->
+    <section class="band band-cream" aria-labelledby="catalogue-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Catalogue &amp; prices</p>
+          <h1 id="catalogue-title">Certified organic produce &mdash; with the price written down.</h1>
+          <p>Prices are per kilo unless stated. Tap <strong>Add</strong> to put an item in your order basket;
+             the running total updates automatically and is saved in your browser so you can come back later.</p>
+        </header>
+      </div>
+    </section>
+
+    <!-- ===== Product table (Task 3: a table) ===== -->
+    <section class="band" aria-labelledby="price-title">
+      <div class="container">
+        <h2 id="price-title" class="visually-hidden">Price list</h2>
+        <div class="table-wrap" role="region" aria-labelledby="price-title" tabindex="0">
+          <table class="price-table" id="price-table">
+            <caption>Current harvest prices &mdash; updated weekly</caption>
+            <thead>
+              <tr>
+                <th scope="col">Product</th>
+                <th scope="col">Category</th>
+                <th scope="col">Unit</th>
+                <th scope="col">Price (&#8377;)</th>
+                <th scope="col">In stock</th>
+                <th scope="col">Add to order</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="Product">Heirloom Tomatoes</td>
+                <td data-label="Category">Vegetable</td>
+                <td data-label="Unit">per kg</td>
+                <td data-label="Price">60</td>
+                <td data-label="In stock">Yes</td>
+                <td data-label="Add"><button class="add-btn" data-name="Heirloom Tomatoes" data-price="60" data-unit="kg">Add</button></td>
+              </tr>
+              <tr>
+                <td data-label="Product">Spinach (Palak)</td>
+                <td data-label="Category">Leafy green</td>
+                <td data-label="Unit">per bunch</td>
+                <td data-label="Price">40</td>
+                <td data-label="In stock">Yes</td>
+                <td data-label="Add"><button class="add-btn" data-name="Spinach (Palak)" data-price="40" data-unit="bunch">Add</button></td>
+              </tr>
+              <tr>
+                <td data-label="Product">Carrots (Orange)</td>
+                <td data-label="Category">Vegetable</td>
+                <td data-label="Unit">per kg</td>
+                <td data-label="Price">55</td>
+                <td data-label="In stock">Yes</td>
+                <td data-label="Add"><button class="add-btn" data-name="Carrots" data-price="55" data-unit="kg">Add</button></td>
+              </tr>
+              <tr>
+                <td data-label="Product">A2 Cow Milk (Gir)</td>
+                <td data-label="Category">Dairy</td>
+                <td data-label="Unit">per litre</td>
+                <td data-label="Price">90</td>
+                <td data-label="In stock">Daily</td>
+                <td data-label="Add"><button class="add-btn" data-name="A2 Cow Milk" data-price="90" data-unit="litre">Add</button></td>
+              </tr>
+              <tr>
+                <td data-label="Product">Paneer (Hand-made)</td>
+                <td data-label="Category">Dairy</td>
+                <td data-label="Unit">per 250 g</td>
+                <td data-label="Price">110</td>
+                <td data-label="In stock">Yes</td>
+                <td data-label="Add"><button class="add-btn" data-name="Paneer" data-price="110" data-unit="250g">Add</button></td>
+              </tr>
+              <tr>
+                <td data-label="Product">Basmati Rice (Pusa 1509)</td>
+                <td data-label="Category">Grain</td>
+                <td data-label="Unit">per kg</td>
+                <td data-label="Price">130</td>
+                <td data-label="In stock">Yes</td>
+                <td data-label="Add"><button class="add-btn" data-name="Basmati Rice" data-price="130" data-unit="kg">Add</button></td>
+              </tr>
+              <tr>
+                <td data-label="Product">Whole Wheat Flour (Atta)</td>
+                <td data-label="Category">Grain</td>
+                <td data-label="Unit">per kg</td>
+                <td data-label="Price">48</td>
+                <td data-label="In stock">Yes</td>
+                <td data-label="Add"><button class="add-btn" data-name="Whole Wheat Atta" data-price="48" data-unit="kg">Add</button></td>
+              </tr>
+              <tr>
+                <td data-label="Product">Seasonal Fruit Box</td>
+                <td data-label="Category">Fruit</td>
+                <td data-label="Unit">per 3 kg box</td>
+                <td data-label="Price">350</td>
+                <td data-label="In stock">Limited</td>
+                <td data-label="Add"><button class="add-btn" data-name="Seasonal Fruit Box" data-price="350" data-unit="3kg box">Add</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Order basket + form (Task 3 + Task 4) ===== -->
+    <section class="band band-cream" id="order" aria-labelledby="order-title">
+      <div class="container order-grid">
+        <!-- Live order basket (Task 4: DOM updates) -->
+        <aside class="basket" aria-labelledby="basket-title">
+          <h2 id="basket-title">Your order basket</h2>
+          <p class="basket-empty" id="basket-empty">No items yet. Tap <strong>Add</strong> in the table above.</p>
+          <ul class="basket-list" id="basket-list" aria-live="polite"></ul>
+          <div class="basket-total" id="basket-total" hidden>
+            <span>Estimated total</span>
+            <strong id="basket-total-amount">&#8377;0</strong>
+          </div>
+          <p class="basket-note">Quantities can be edited in the form. Total updates live and is saved in your browser.</p>
+          <button type="button" class="btn btn-ghost btn-sm" id="clear-basket">Clear basket</button>
+        </aside>
+
+        <!-- Order form with 5+ input types (Task 3) -->
+        <div class="order-form-wrap">
+          <h2 id="order-title">Place your order</h2>
+          <p class="form-intro">Fill in your details and confirm. Your information stays in your browser until you submit.</p>
+
+          <form id="order-form" class="order-form" novalidate>
+            <!-- 1. text -->
+            <div class="field">
+              <label for="cust-name">Full name <span class="req">*</span></label>
+              <input type="text" id="cust-name" name="cust-name" autocomplete="name" required minlength="2" />
+              <span class="error" id="err-name" role="alert"></span>
+            </div>
+
+            <!-- 2. email -->
+            <div class="field">
+              <label for="cust-email">Email <span class="req">*</span></label>
+              <input type="email" id="cust-email" name="cust-email" autocomplete="email" required />
+              <span class="error" id="err-email" role="alert"></span>
+            </div>
+
+            <!-- 3. tel -->
+            <div class="field">
+              <label for="cust-phone">Phone <span class="req">*</span></label>
+              <input type="tel" id="cust-phone" name="cust-phone" autocomplete="tel" pattern="[0-9+\s\-]{10,15}" required />
+              <span class="error" id="err-phone" role="alert"></span>
+            </div>
+
+            <!-- 4. select -->
+            <div class="field">
+              <label for="delivery-slot">Delivery slot <span class="req">*</span></label>
+              <select id="delivery-slot" name="delivery-slot" required>
+                <option value="">Choose a slot&hellip;</option>
+                <option value="sat-am">Saturday 7&ndash;10 AM</option>
+                <option value="sat-pm">Saturday 4&ndash;7 PM</option>
+                <option value="tue-am">Tuesday 7&ndash;10 AM</option>
+                <option value="pickup">Farm pick-up (Saturday)</option>
+              </select>
+              <span class="error" id="err-slot" role="alert"></span>
+            </div>
+
+            <!-- 5. radio -->
+            <fieldset class="field fieldset-block">
+              <legend>Order type</legend>
+              <label class="radio"><input type="radio" name="order-type" value="one-time" checked /> One-time order</label>
+              <label class="radio"><input type="radio" name="order-type" value="weekly" /> Weekly subscription</label>
+            </fieldset>
+
+            <!-- 6. number -->
+            <div class="field">
+              <label for="delivery-pincode">Delivery pincode <span class="req">*</span></label>
+              <input type="number" id="delivery-pincode" name="delivery-pincode" min="100000" max="999999" step="1" required inputmode="numeric" />
+              <span class="error" id="err-pincode" role="alert"></span>
+            </div>
+
+            <!-- 7. date -->
+            <div class="field">
+              <label for="first-delivery">First delivery date <span class="req">*</span></label>
+              <input type="date" id="first-delivery" name="first-delivery" required />
+              <span class="error" id="err-date" role="alert"></span>
+            </div>
+
+            <!-- 8. range -->
+            <div class="field">
+              <label for="budget">Weekly budget cap (&#8377;) <span id="budget-val" class="range-val">1500</span></label>
+              <input type="range" id="budget" name="budget" min="500" max="5000" step="100" value="1500" />
+            </div>
+
+            <!-- 9. checkbox -->
+            <div class="field field-check">
+              <label class="check"><input type="checkbox" id="agree-privacy" name="agree-privacy" required /> I agree that my name, phone and address will be used only to fulfil this order (see ethics note). <span class="req">*</span></label>
+              <span class="error" id="err-agree" role="alert"></span>
+            </div>
+
+            <!-- 10. textarea -->
+            <div class="field">
+              <label for="notes">Order notes (optional)</label>
+              <textarea id="notes" name="notes" rows="3" maxlength="300" placeholder="e.g. leave at gate, no onions, replace tomatoes with cherry tomatoes"></textarea>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary" id="place-order">Place order</button>
+              <button type="reset" class="btn btn-ghost" id="reset-form">Reset form</button>
+            </div>
+
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== AI disclosure banner (Task 6 ethics) ===== -->
+    <section class="band" aria-labelledby="ai-title">
+      <div class="container ai-banner">
+        <h2 id="ai-title">AI &amp; ethics disclosure</h2>
+        <p>
+          Parts of this website's HTML, CSS and JavaScript were drafted with the help of an AI assistant
+          and then reviewed and edited by the developer. All produce names, prices and the certificate
+          number are real farm data, not AI-generated. Customer data is stored only in the visitor's own
+          browser (Local Storage) and is never sold or shared. Images are original SVG drawn for this
+          project &mdash; no third-party copyrighted photographs are used.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <p class="footer-name">A25 Organics</p>
+        <p class="footer-tag">Certified organic produce, Faridabad.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Catalogue &amp; Order</a></li>
+          <li><a href="index.html#trust">Why trust us</a></li>
+        </ul>
+      </nav>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><a href="tel:+919811001125">+91 98110 01125</a></p>
+        <p><a href="mailto:hello@a25organics.in">hello@a25organics.in</a></p>
+      </div>
+      <div class="footer-legal">
+        <h4>Privacy</h4>
+        <p>Order details are stored only in your browser (Local Storage) and emailed to you. We never sell customer data.</p>
+        <p class="copy">&copy; 2025 A25 Organics.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

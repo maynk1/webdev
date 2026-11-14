@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Task 6: SEO meta tags -->
+  <title>A25 Organics | Fresh Farm Produce Delivered Naturally</title>
+  <meta name="description" content="A25 Organics grows and delivers certified organic vegetables, fruits, grains and dairy straight from our family farm. Browse the catalogue and order online with transparent pricing." />
+  <meta name="keywords" content="organic farm produce, fresh vegetables online, chemical-free dairy, farm to table" />
+  <meta name="author" content="A25 Organics" />
+  <!-- Open Graph for share previews -->
+  <meta property="og:title" content="A25 Organics | Fresh Farm Produce" />
+  <meta property="og:description" content="Certified organic produce grown on our family farm and delivered to your door." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Skip link for accessibility (Task 6) -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- ===== Header / Nav ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="A25 Organics home">
+        <!-- Inline SVG logo (Task 3 media element) -->
+        <svg class="brand-mark" width="40" height="40" viewBox="0 0 48 48" role="img" aria-label="A25 Organics leaf logo">
+          <circle cx="24" cy="24" r="23" fill="#FEFAE0" stroke="#2D6A4F" stroke-width="2"/>
+          <path d="M14 30 C14 18, 26 12, 34 14 C32 26, 24 34, 14 30 Z" fill="#52B788"/>
+          <path d="M16 30 C22 24, 28 20, 33 16" stroke="#2D6A4F" stroke-width="1.5" fill="none"/>
+        </svg>
+        <span class="brand-name">A25 <span class="brand-accent">Organics</span></span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="products.html">Catalogue &amp; Order</a></li>
+          <li><a href="#about">About the Farm</a></li>
+          <li><a href="#trust">Why Trust Us</a></li>
+          <li><a href="products.html#order" class="nav-cta">Order Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== Hero ===== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Certified Organic &middot; Faridabad, Haryana</p>
+          <h1 id="hero-title">Fresh from our soil, <span class="hl">straight to your kitchen.</span></h1>
+          <p class="lead">
+            A25 Organics is a family-run farm growing seasonal vegetables, fruits, grains and dairy
+            without synthetic chemicals. Stop ordering over WhatsApp &mdash; browse a real catalogue,
+            see transparent prices, and place a verified order in two minutes.
+          </p>
+          <div class="hero-actions">
+            <a href="products.html" class="btn btn-primary">Browse the Catalogue</a>
+            <a href="#about" class="btn btn-ghost">Meet the Farm</a>
+          </div>
+          <ul class="hero-stats" role="list">
+            <li><strong>24</strong><span>seasonal crops</span></li>
+            <li><strong>0</strong><span>synthetic pesticides</span></li>
+            <li><strong>2 hr</strong><span>harvest-to-door</span></li>
+          </ul>
+        </div>
+        <div class="hero-visual">
+          <!-- Decorative SVG illustration of a farm basket (Task 3 media element) -->
+          <svg viewBox="0 0 320 320" role="img" aria-label="Illustration of a wooden basket filled with carrots, tomatoes, leafy greens and a milk bottle">
+            <defs>
+              <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#FEFAE0"/>
+                <stop offset="1" stop-color="#E9EDC9"/>
+              </linearGradient>
+            </defs>
+            <rect x="0" y="0" width="320" height="320" rx="20" fill="url(#sky)"/>
+            <!-- basket -->
+            <path d="M60 190 L260 190 L240 280 L80 280 Z" fill="#D4A373" stroke="#8B5E34" stroke-width="3"/>
+            <path d="M60 190 L260 190" stroke="#8B5E34" stroke-width="4"/>
+            <!-- weave lines -->
+            <path d="M70 200 L250 200 M70 220 L250 220 M70 240 L250 240 M70 260 L250 260" stroke="#8B5E34" stroke-width="1.5" opacity="0.6"/>
+            <!-- milk bottle -->
+            <rect x="120" y="120" width="34" height="60" rx="4" fill="#FFFFFF" stroke="#6B7A6A" stroke-width="2"/>
+            <rect x="128" y="112" width="18" height="12" fill="#6B7A6A"/>
+            <!-- tomatoes -->
+            <circle cx="180" cy="160" r="22" fill="#E76F51" stroke="#A8412E" stroke-width="2"/>
+            <circle cx="210" cy="150" r="18" fill="#E76F51" stroke="#A8412E" stroke-width="2"/>
+            <path d="M180 142 L184 132 M210 134 L214 124" stroke="#2D6A4F" stroke-width="2"/>
+            <!-- carrots -->
+            <path d="M90 150 L100 195 L110 195 L120 150 Z" fill="#F4A261" stroke="#B5651D" stroke-width="2"/>
+            <path d="M95 152 L100 138 L105 152 M105 152 L110 138 L115 152" stroke="#2D6A4F" stroke-width="2" fill="#52B788"/>
+            <!-- leafy greens -->
+            <ellipse cx="240" cy="170" rx="26" ry="18" fill="#52B788" stroke="#2D6A4F" stroke-width="2"/>
+            <path d="M225 170 Q240 150 255 170 M225 175 Q240 155 255 175" stroke="#2D6A4F" stroke-width="1.5" fill="none"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section id="about" class="band band-cream" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="about-text">
+          <h2 id="about-title">A farm you can name, not a WhatsApp number.</h2>
+          <p>
+            For three years our customers ordered by sending a message to a personal phone number,
+            hoping someone would reply with a price. Produce changed weekly, prices were never written
+            down, and new customers had no way to verify who we were. That is exactly the trust gap
+            this website closes.
+          </p>
+          <p>
+            Every crop listed here is grown on our four acres in Faridabad or sourced from two
+            neighbouring certified farms. We list the harvest date, the price per kilo, and our organic
+            certificate number on every product page. Orders placed through the site are confirmed by
+            email, not by chat.
+          </p>
+        </div>
+        <aside class="about-card" aria-label="Farm facts">
+          <h3>Farm snapshot</h3>
+          <dl class="fact-list">
+            <dt>Location</dt><dd>Faridabad, Haryana</dd>
+            <dt>Certified since</dt><dd>2022 (India Organic)</dd>
+            <dt>Land</dt><dd>4 acres own + 2 partner farms</dd>
+            <dt>Delivery</dt><dd>Faridabad &amp; South Delhi</dd>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ===== Featured produce ===== -->
+    <section class="band" aria-labelledby="featured-title">
+      <div class="container">
+        <header class="section-head">
+          <h2 id="featured-title">This week's harvest</h2>
+          <p>A small sample &mdash; the full list lives in the catalogue.</p>
+        </header>
+        <div class="card-grid">
+          <article class="produce-card">
+            <div class="produce-badge">In season</div>
+            <h3>Heirloom Tomatoes</h3>
+            <p class="produce-meta">Harvested 31 Oct &middot; &#8377;60/kg</p>
+            <p>Deep-red, vine-ripened varieties grown from saved seed. Firm flesh, low water content.</p>
+          </article>
+          <article class="produce-card">
+            <div class="produce-badge">In season</div>
+            <h3>Spinach (Palak)</h3>
+            <p class="produce-meta">Harvested 31 Oct &middot; &#8377;40/bunch</p>
+            <p>Large-leaf palak cut the morning of delivery. Washed in chilled well water.</p>
+          </article>
+          <article class="produce-card">
+            <div class="produce-badge">New batch</div>
+            <h3>A2 Cow Milk</h3>
+            <p class="produce-meta">Daily &middot; &#8377;90/litre</p>
+            <p>Indigenous Gir cows, hand-milked, unboiled. Delivered within 2 hours in steel cans.</p>
+          </article>
+          <article class="produce-card">
+            <div class="produce-badge">Limited</div>
+            <h3>Basmati Rice (2025)</h3>
+            <p class="produce-meta">Aged 8 months &middot; &#8377;130/kg</p>
+            <p>Single-field Pusa 1509. Aged on the cob for aroma. Milled to order.</p>
+          </article>
+        </div>
+        <div class="section-cta">
+          <a href="products.html" class="btn btn-primary">See all 24 products &amp; order</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Trust signals ===== -->
+    <section id="trust" class="band band-cream" aria-labelledby="trust-title">
+      <div class="container">
+        <header class="section-head">
+          <h2 id="trust-title">Why you can trust A25 Organics</h2>
+          <p>Trust was the single biggest gap in the WhatsApp-only model. Here is how the site closes it.</p>
+        </header>
+        <div class="trust-grid">
+          <article class="trust-card">
+            <svg width="34" height="34" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 L20 5 V11 C20 16 16 20 12 22 C8 20 4 16 4 11 V5 Z" fill="none" stroke="#2D6A4F" stroke-width="2"/><path d="M9 12 L11 14 L15 9" fill="none" stroke="#52B788" stroke-width="2"/></svg>
+            <h3>Verified certificate</h3>
+            <p>Certificate no. <strong>IN-ORG-2022-0457</strong> displayed on every product. Traceable to the field.</p>
+          </article>
+          <article class="trust-card">
+            <svg width="34" height="34" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="#2D6A4F" stroke-width="2"/><path d="M3 9 L21 9" stroke="#2D6A4F" stroke-width="2"/><circle cx="8" cy="14" r="1.4" fill="#D4A373"/><path d="M11 14 H17" stroke="#6B7A6A" stroke-width="2"/></svg>
+            <h3>Written prices, no haggling</h3>
+            <p>Every unit price is published per kilo or per bunch. The total is computed by the site, not typed by hand.</p>
+          </article>
+          <article class="trust-card">
+            <svg width="34" height="34" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12 C4 7 8 4 12 4 C16 4 20 7 20 12 C20 17 16 20 12 20 C8 20 4 17 4 12 Z" fill="none" stroke="#2D6A4F" stroke-width="2"/><path d="M9 12 L11 14 L15 10" fill="none" stroke="#52B788" stroke-width="2"/></svg>
+            <h3>Email confirmation</h3>
+            <p>Every order triggers an email receipt with the harvest date, total, and delivery slot. Nothing lives only in chat.</p>
+          </article>
+        </div>
+
+        <!-- Testimonials -->
+        <div class="quotes">
+          <blockquote class="quote-card">
+            <p>&ldquo;I stopped buying from the WhatsApp number because prices kept changing. The site shows the same price to everyone. That alone earned my repeat order.&rdquo;</p>
+            <footer>&mdash; Ritika S., Sector 21 Faridabad</footer>
+          </blockquote>
+          <blockquote class="quote-card">
+            <p>&ldquo;The certificate number is right there on the product page. I actually checked it. Now I send the link to my mother-in-law instead of explaining everything.&rdquo;</p>
+            <footer>&mdash; Anand M., Greater Kailash II</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Location with iframe (Task 3 media element) ===== -->
+    <section class="band" aria-labelledby="location-title">
+      <div class="container location-grid">
+        <div class="location-text">
+          <h2 id="location-title">Visit the farm</h2>
+          <p>
+            We are open every Saturday for farm walks and pick-up orders. The map below shows the
+            field gate. If you prefer to pick up your order instead of delivery, choose
+            <em>&ldquo;Farm pick-up&rdquo;</em> in the order form.
+          </p>
+          <address class="address-block">
+            A25 Organics Farm<br/>
+            Dhauj Road, Ballabgarh<br/>
+            Faridabad, Haryana 121004<br/>
+            <a href="tel:+919811001125">+91 98110 01125</a>
+          </address>
+        </div>
+        <div class="location-map">
+          <!-- Google Maps iframe (Task 3 media element: iFrame) -->
+          <iframe
+            title="Map showing A25 Organics farm location in Faridabad"
+            src="https://www.google.com/maps?q=Faridabad,Haryana&output=embed"
+            width="100%" height="320" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <p class="footer-name">A25 Organics</p>
+        <p class="footer-tag">Certified organic produce, Faridabad.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Catalogue &amp; Order</a></li>
+          <li><a href="#trust">Why trust us</a></li>
+        </ul>
+      </nav>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><a href="tel:+919811001125">+91 98110 01125</a></p>
+        <p><a href="mailto:hello@a25organics.in">hello@a25organics.in</a></p>
+      </div>
+      <div class="footer-legal">
+        <h4>Privacy</h4>
+        <p>Order details are stored only in your browser (Local Storage) and emailed to you. We never sell customer data. See the ethics note in the project report.</p>
+        <p class="copy">&copy; 2025 A25 Organics.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
